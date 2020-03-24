@@ -28,13 +28,13 @@ namespace designpattern
             switch(choixKebab){
 
                 case "vegetarien" : 
-                 kebab = new Kebab(true,true,true,false,choixsauce);break;
+                 kebab = new Kebab(true,true,true,false,choixsauce,false);break;
 
                 case "pescetarien" : 
-                kebab = new Kebab(true,true,true,false,choixsauce);break;
+                kebab = new Kebab(true,true,true,false,choixsauce,true);break;
 
                 case "normal" : 
-                kebab = new Kebab(true,true,true,true,choixsauce);break;
+                kebab = new Kebab(true,true,true,true,choixsauce,false);break;
             }
 
             Console.WriteLine("Vous avez choisis un Kebab :"+choixKebab + "avec la sauce :" +choixsauce);
@@ -48,19 +48,23 @@ namespace designpattern
 
     public class Kebab
     {
-        bool salade,tomate,oignon,viande;
+        bool salade,tomate,oignon,viande,crudite;
         string nomSauce;
-        public Kebab(bool salade, bool tomate, bool oignon,bool viande, string nomSauce ){
+        public Kebab(bool salade, bool tomate, bool oignon,bool viande, string nomSauce,bool crudite ){
             this.salade = salade;
             this.tomate = tomate;
             this.oignon = oignon;
             this.viande = viande;
             this.nomSauce = nomSauce;
+            this.crudite = crudite;
 
         }
 
         public bool getSalade(){
             return this.salade;
+        }
+        public bool getCrudite(){
+            return this.crudite;
         }
         public bool getTomate(){
             return this.tomate;
@@ -77,6 +81,10 @@ namespace designpattern
 
        public void setSalade(bool salade){
             this.salade = salade;
+
+        }
+        public void setCrudite(bool crudite){
+            this.crudite = crudite;
 
         }
         public void setTomate(bool tomate){

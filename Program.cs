@@ -11,6 +11,7 @@ namespace designpattern
             string genreKebab;
              string choixsauce;
             string[] kebabList ={"vegetarien", "pescetarien","normal"};
+             Kebab kebab;
 
             /////////////////////////////////
 
@@ -24,7 +25,7 @@ namespace designpattern
             Console.WriteLine("Quelle sauce voulez vous ?");
             choixsauce = Console.ReadLine().ToLower();
             ////////////////////////
-            Kebab kebab;
+           
             switch(choixKebab){
 
                 case "vegetarien" : 
@@ -38,6 +39,17 @@ namespace designpattern
             }
 
             Console.WriteLine("Vous avez choisis un Kebab :"+choixKebab + "avec la sauce :" +choixsauce);
+
+             
+            string retirerOignon;
+             do{
+                 Console.WriteLine("Voulez vous retirer les oignons ? \n Oui/Non ");
+                retirerOignon = Console.ReadLine().ToLower();
+             }while(retirerOignon != "oui" && retirerOignon != "non");
+
+        
+            if (retirerOignon == "oui") kebab.sansOignon();
+            
 
 
         }
@@ -100,6 +112,10 @@ namespace designpattern
 
        public void setNomSauce(string nomSauce){
              this.nomSauce = nomSauce;
+        }
+
+        public void sansOignon(){
+            setOignon(false);
         }
     }
 }

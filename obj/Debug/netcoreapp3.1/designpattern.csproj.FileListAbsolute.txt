@@ -1,0 +1,11 @@
+C:\Users\allou\Desktop\esgiWork\designpattern\bin\Debug\netcoreapp3.1\designpattern.exe
+C:\Users\allou\Desktop\esgiWork\designpattern\bin\Debug\netcoreapp3.1\designpattern.deps.json
+C:\Users\allou\Desktop\esgiWork\designpattern\bin\Debug\netcoreapp3.1\designpattern.runtimeconfig.json
+C:\Users\allou\Desktop\esgiWork\designpattern\bin\Debug\netcoreapp3.1\designpattern.runtimeconfig.dev.json
+C:\Users\allou\Desktop\esgiWork\designpattern\bin\Debug\netcoreapp3.1\designpattern.dll
+C:\Users\allou\Desktop\esgiWork\designpattern\bin\Debug\netcoreapp3.1\designpattern.pdb
+C:\Users\allou\Desktop\esgiWork\designpattern\obj\Debug\netcoreapp3.1\designpattern.csprojAssemblyReference.cache
+C:\Users\allou\Desktop\esgiWork\designpattern\obj\Debug\netcoreapp3.1\designpattern.AssemblyInfoInputs.cache
+C:\Users\allou\Desktop\esgiWork\designpattern\obj\Debug\netcoreapp3.1\designpattern.AssemblyInfo.cs
+C:\Users\allou\Desktop\esgiWork\designpattern\obj\Debug\netcoreapp3.1\designpattern.dll
+C:\Users\allou\Desktop\esgiWork\designpattern\obj\Debug\netcoreapp3.1\designpattern.pdb

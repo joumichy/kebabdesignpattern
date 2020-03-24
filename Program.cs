@@ -36,6 +36,8 @@ namespace designpattern
 
                 case "normal" : 
                 kebab = new Kebab(true,true,true,true,choixsauce,false);break;
+
+                default : kebab = new Kebab(true,true,true,true,choixsauce,false);break;
             }
 
             Console.WriteLine("Vous avez choisis un Kebab :"+choixKebab + "avec la sauce :" +choixsauce);

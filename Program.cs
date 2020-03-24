@@ -9,43 +9,41 @@ namespace designpattern
             string reponse;
             string choixKebab;
             string genreKebab;
+             string choixsauce;
             string[] kebabList ={"vegetarien", "pescetarien","normal"};
 
-            Console.WriteLine("Bonjour, Voulez vous de la viande dans votre kebab ?");
+            /////////////////////////////////
+
+            Console.WriteLine("Bonjour Quel genre de Kebab voulez vous ? \n :");
             foreach(string elem in kebabList){
                  Console.WriteLine(elem);
             }
             choixKebab = Console.ReadLine().ToLower();
-            string nomSauce = choixSauce();
+            //////////////////////////////
+           
+            Console.WriteLine("Quelle sauce voulez vous ?");
+            choixsauce = Console.ReadLine().ToLower();
+            ////////////////////////
             Kebab kebab;
             switch(choixKebab){
-                kebabList[0]: kebab = new Kebab(true,true,true,false)
+
+                case "vegetarien" : 
+                 kebab = new Kebab(true,true,true,false,choixsauce);break;
+
+                case "pescetarien" : 
+                kebab = new Kebab(true,true,true,false,choixsauce);break;
+
+                case "normal" : 
+                kebab = new Kebab(true,true,true,true,choixsauce);break;
             }
 
-            do{
-                Console.WriteLine("Bonjour, Voulez vous de la viande dans votre kebab ? \n Oui/Non");
-                reponse = Console.ReadLine();
-                reponse.ToLower();
-                Console.WriteLine(reponse);
-
-            }while(reponse != "oui" && reponse != "non");
-            
-           
-            
-            bool value;
-            if (reponse == "oui") value = true;
-            else value = false;
-
+            Console.WriteLine("Vous avez choisis un Kebab :"+choixKebab + "avec la sauce :" +choixsauce);
 
 
         }
-        static string choixSauce(){
-            string reponse;
-            Console.WriteLine("Quelle sauce voulez vous ?");
-            reponse = Console.ReadLine().ToLower();
-            Console.WriteLine(reponse);
-            return reponse;
-        }
+
+
+
     }
 
     public class Kebab
